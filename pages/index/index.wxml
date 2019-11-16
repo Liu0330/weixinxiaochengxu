@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="eventboard" style="height:{{deviceHeight}}px">
+  <image src="{{imgUrl}}" style="width:100%;height:240px"></image>
+  <view class="container">
+    <view class="datetext">
+      <text>{{dateInfo}}</text>
+      <view class="userbutton">
+        <button class="user-button" size="mini" type="warn"  plain="true" bindtap="copyText">
+          一键复制
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class="container">
+    <view>{{nowTime}}</view>
+    <view>{{shichen}}</view>
+  </view>
+  <view class="container">
+    <view>{{detail[scIndex]}}</view>
+  </view>
+</view>

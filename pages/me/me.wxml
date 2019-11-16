@@ -1,0 +1,38 @@
+<!--pages/me/me.wxml-->
+<official-account ></official-account>
+<view class="eventboard">
+  <view class="bg">
+    <view class="intro">
+      <view>设计思路：</view>
+      <view>最最最初的想法来自于看小程序开发文档时了解到对剪切板的调用，萌生了提供有趣的文本信息、供大家一键复制到剪贴板的想法。</view>
+      <view>最先拿来练手的就是关于时间流逝百分比的提醒信息。</view>
+      <view> </view>
+      <view>为了增加小程序的信息价值，特地添加了历史上今日的事件展现，支持切换时间顺序以及前后一天的查询。</view>
+      <view>至于土味情话这部分，因为时间关系还没设计好，只是简单的列表展示并提供一键复制，后续会进一步优化。</view>
+    </view>
+  </view>
+  <view class="bg">
+    <view class="item">
+      <view>开发者：</view>
+      <view>刘旺學長</view>
+    </view>
+  </view>
+  <view class="bg">
+    <view class="item">
+      <view>个人微信：</view>
+      <view>18332191389</view>
+    </view>
+  </view>
+  <view class="bg">
+    <view class="item">
+      <view>微信公众号：</view>
+      <view>liuwangxuezhang</view>
+    </view>
+  </view>
+    <view class="bg">
+    <view class="item">
+      <view>特别感谢：</view>
+      <view>GitHub开源平台</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+/**index.wxss**/
+.eventboard {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+}
+.userbutton {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  padding: 20rpx 20rpx;
+  width: 80%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+} 

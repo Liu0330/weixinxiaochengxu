@@ -1,0 +1,13 @@
+<!--pages/wish/wish.wxml-->
+<view class="eventboard">
+  <view wx:for="{{sweet}}" wx:key="unique" class="bg">
+    <view class="item">
+      <view class="">{{item}}</view>
+      <view class="userbutton">
+        <button size="mini" type="warn" plain="true" bindtap="copySweet" data-variable='{{item}}'>
+          一键复制
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

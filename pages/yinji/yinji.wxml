@@ -1,0 +1,78 @@
+<!--pages/yinji/yinji.wxml-->
+<view>
+  <view class="nav">
+    <view class="nav-item" bindtap="showLast">
+      <view wx:if="{{yesterday}}">
+        <image src="../../images/yinji/zuo-1.png" style="width:20px;height:18px"></image>
+      </view>
+      <view wx:else>
+        <image src="../../images/yinji/zuo-0.png" style="width:20px;height:18px"></image>
+      </view>
+    </view>
+    <view class="nav-item" bindtap="showNow">
+      <view wx:if="{{today}}">
+        <image src="../../images/yinji/jinri-1.png" style="width:20px;height:18px"></image>
+      </view>
+      <view wx:else>
+        <image src="../../images/yinji/jinri-0.png" style="width:20px;height:18px"></image>
+      </view>
+    </view>
+    <view class="nav-item" bindtap="showNext">
+      <view wx:if="{{tomorrow}}">
+        <image src="../../images/yinji/you-1.png" style="width:20px;height:18px"></image>
+      </view>
+      <view wx:else>
+        <image src="../../images/yinji/you-0.png" style="width:20px;height:18px"></image>
+      </view>
+    </view>
+    <view class="nav-item" bindtap="showReverse">
+      <view wx:if="{{order}}">
+        <image src="../../images/yinji/shunxu-1.png" style="width:20px;height:18px"></image>
+      </view>
+      <view wx:else>
+        <image src="../../images/yinji/shunxu-0.png" style="width:20px;height:18px"></image>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <scroll-view scroll-y style="height:{{deviceHeight}}px" >
+      <view class="eventboard">
+        <view wx:if="{{timeline}}">
+          <view wx:for="{{eventList}}" wx:key="unique" class="bg">
+            <view class="item">
+              <view class="">{{item["year"]}}年{{month}}月{{day}}日，{{item["title"]}}</view>
+              <view class="userbutton">
+                <button size="mini" type="warn" plain="true" bindtap="copyEvent" data-variable='{{item["year"]}}年{{month}}月{{day}}日，{{item["title"]}}'>
+                  一键复制
+                </button>
+              </view>
+              <view class="mark rt">{{item["link"]}}</view>   
+            </view>
+          </view>  
+        </view>
+
+        <view wx:else>
+          <view wx:for="{{reverseList}}" wx:key="unique" class="bg">
+            <view class="item">
+              <view>
+                {{item["year"]}}年{{month}}月{{day}}日，{{item["title"]}}
+              </view>
+              <view class="userbutton">
+                <button size="mini" type="warn" plain="true" bindtap="copyEvent" data-variable='{{item["year"]}}年{{month}}月{{day}}日，{{item["title"]}}'>
+                  一键复制
+                </button>
+              </view>
+              <view class="mark rt">{{item["link"]}}</view>   
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </scroll-view>
+  </view>
+
+</view>
+
+
+

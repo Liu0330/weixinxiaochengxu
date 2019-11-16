@@ -1,0 +1,51 @@
+/* pages/yinji/yinji.wxss */
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #ffffff;
+  
+}
+
+.nav-item{
+  width: 25%;
+  margin-top:10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.eventboard {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F4F4F4;
+}
+
+.bg{
+  width:90%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.item{
+  padding: 10px;
+}
+
+.md{
+  text-align: center;
+}
+.rt{
+  text-align: right;
+}
+.mark{
+  font-size: 12px;
+}
+.userbutton {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+

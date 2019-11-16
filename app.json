@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/yinji/yinji",
+    "pages/wish/wish",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D53E37",
+    "navigationBarTitleText": "刘旺学长",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#D53E37",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "时间",
+        "iconPath": "images/bar/time-0.png",
+        "selectedIconPath": "images/bar/time-1.png"
+      },
+      {
+        "pagePath": "pages/yinji/yinji",
+        "text": "历史今日",
+        "iconPath": "images/bar/record-0.png",
+        "selectedIconPath": "images/bar/record-1.png"
+      },
+      {
+        "pagePath": "pages/wish/wish",
+        "text": "土味情话",
+        "iconPath": "images/bar/wish-0.png",
+        "selectedIconPath": "images/bar/wish-1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "关于",
+        "iconPath": "images/bar/me-0.png",
+        "selectedIconPath": "images/bar/me-1.png"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
